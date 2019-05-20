@@ -20,8 +20,7 @@ Run these commands in a second terminal:
 ```
 cd client
 
-# If this is a fresh clone run this command to install the client/node_modules
-# folder. Otherwise you can skip this command.
+# Installs any missing modules.
 npm install
 
 # Starts the React server on localhost:3000
