@@ -26,7 +26,7 @@ const proxy = require('http-proxy-middleware');
 
 module.exports = function(app) {
   /** Proxies calls to our Google App Engine. */
-  app.use(proxy('/gap/*', { target: 'http://localhost:8080/' }));
+  app.use(proxy('/api/*', { target: 'http://localhost:8080/' }));
   /** Proxies calls to the Google Login Server. */
   app.use(proxy('/_ah/*', { target: 'http://localhost:8080/' }));
 };
