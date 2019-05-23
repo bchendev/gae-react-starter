@@ -19,15 +19,21 @@
  * Client links do not need redirect to an external server.
  */
 
+/** Prefix for all servlet fetch links. */
+const servletPrefix = '/api';
+
+/** Link to the login servlet. */
+export const LOGIN = servletPrefix + '/login';
+/** Link to the logout servlet. */
+export const LOGOUT = servletPrefix + '/logout';
+/**Link to the login status servlet. */
+export const LOGIN_STATUS = servletPrefix + '/login-status';
+/** Link to the message servlet.  */
+export const MESSAGE = servletPrefix + '/messages';
+
 /** Client link to the about page. */
 export const ABOUT_US = '/aboutus';
 /** Client link to the home page. */
 export const HOME = '/';
-/** Google App Engine link to the login servlet. */
-export const LOGIN = '/gap/login';
-/** Google App Engine link to the login status servlet. */
-export const LOGIN_STATUS = '/gap/login-status';
-/** Google App Engine link to the logout servlet. */
-export const LOGOUT = '/gap/logout';
 /** Client link to the user's page. */
 export const USER_PAGE = '/userpage';

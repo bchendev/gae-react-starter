@@ -44,7 +44,8 @@ npm start
 4. Make changes to java files and re-compile the Appengine devserver.
 5. Test changes on http://localhost:3000 to see if the server changes worked. Your changes won't show up on localhost:8080 because the server is running ui-less.
 
-## Useful Debugging Tools
+## Useful Tools
 
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
+- Java formatter, run from top level directory `java -jar googleformatter.jar --replace $(git ls-files|grep \.java$)`
