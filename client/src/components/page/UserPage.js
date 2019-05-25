@@ -73,7 +73,7 @@ class UserPage extends Component {
     // another user's page. Some controls such as the message form will hide if
     // the user is not viewing their own page.
     const hiddenIfViewingOther = userEmail !== userEmailParam ? HIDDEN : null;
-    const hiddenIfHasMessages = messages > 0 ? HIDDEN : null;
+    const hiddenIfHasMessages = messages && messages.length > 0 ? HIDDEN : null;
 
     const messagesUi = messages
       ? messages.map(message => createMessageUi(message))
