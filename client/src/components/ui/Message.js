@@ -18,7 +18,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * An introduction card for each teammate.
+ * A message card contaning a sender, timestamp, and content body.
  * @return The html representation of the card.
  */
 const Message = function(props) {
