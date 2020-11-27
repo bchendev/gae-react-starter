@@ -12,7 +12,7 @@ Run these commands in the first terminal:
 cd server
 
 # Starts a local appengine server on localhost:8080
-mvn appengine:devserver
+mvn package appengine:run
 ```
 
 Run these commands in a second terminal:
@@ -48,4 +48,3 @@ npm start
 
 - [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 - [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
-- Java formatter, run from top level directory `java -jar googleformatter.jar --replace $(git ls-files|grep \.java$)`
